@@ -1,54 +1,22 @@
-# Node
-node_modules/
-npm-debug.log*
+# Resume Editor
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+A web-based application for uploading, editing, and enhancing resumes with AI suggestions.
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+## Features
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+- Upload PDF/DOCX resumes (mock parsing)
+- Edit all resume sections
+- AI enhancement for each section
+- Save resumes to backend
+- Download as JSON
 
-# Frontend
-frontend/.env
-frontend/.env.local
-frontend/.env.development.local
-frontend/.env.test.local
-frontend/.env.production.local
-frontend/build/
-frontend/.DS_Store
-frontend/coverage/
+## Prerequisites
 
-# Backend
-backend/.DS_Store
+- Node.js (v14+)
+- Python (3.7+)
+- npm or yarn
+- Git
+
+## Setup Instructions
+
+### 1. Clone the repository
