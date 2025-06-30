@@ -1,7 +1,55 @@
 .suggestions {
-  margin-top: 20px;
-  background: #f1f1f1;
-  padding: 15px;
-  border-radius: 6px;
+  margin-top: 25px;
+  background: #2a2a3a;
+  padding: 20px;
+  border-radius: 8px;
   white-space: pre-wrap;
+  color: #e0e0ff;
+  border: 1px solid rgba(90, 120, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Consolas', 'Monaco', monospace;
+  line-height: 1.6;
+  position: relative;
+}
+
+.suggestions::before {
+  content: 'AI Suggestions';
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  background: #4d7cff;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* For code blocks or special formatting within suggestions */
+.suggestions pre {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.suggestions code {
+  font-family: 'Consolas', 'Monaco', monospace;
+  color: #a0f0a0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .suggestions {
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .suggestions::before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+  }
 }
